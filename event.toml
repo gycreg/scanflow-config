@@ -1,0 +1,60 @@
+# GYC Conference Event Configuration
+# This configuration file defines the event settings, card fields, and meal options
+# for the scanflow application based on the registration data from regdl
+
+EventName = "Seeing the Invisible"
+Logo = "../static/images/gyc-logo-hotspot.svg"
+
+# Card Fields - Define what information appears on name cards/badges
+# These use Go template syntax to access registrant data fields
+[[CardFields]]
+Name = "Full Name"
+Template = "{{.NameFirst}} {{.NameLast}}"
+
+[[CardFields]]
+Name = "Registration Type"
+Template = "{{.EventPass}}"
+
+[[CardFields]]
+Name = "T-Shirt Size"
+Template = "{{if .ShirtSize}}{{.ShirtSize}}{{else}}No Shirt{{end}}"
+
+# Meals Configuration
+# Each meal corresponds to a "Meals.{slug}" column in the registrant CSV
+# The slug must exactly match the column naming pattern from regdl output
+
+[[Meals]]
+Name = "Thursday Breakfast"
+Slug = "thursday_breakfast"
+
+[[Meals]]
+Name = "Thursday Lunch"
+Slug = "thursday_lunch"
+
+[[Meals]]
+Name = "Friday Breakfast"
+Slug = "friday_breakfast"
+
+[[Meals]]
+Name = "Sabbath Breakfast"
+Slug = "sabbath_breakfast"
+
+[[Meals]]
+Name = "Sabbath Lunch"
+Slug = "sabbath_lunch"
+
+[[Meals]]
+Name = "Sunday Breakfast"
+Slug = "sunday_breakfast"
+
+# Extra Scans Configuration
+# Custom scanning sessions with conditional logic based on registrant data
+
+[[ExtraScans]]
+Name = "T-Shirt Distribution"
+Slug = "tshirt_distribution"
+Unique = true
+Test = "ShirtSize != '' && ShirtSize != 'No Shirt'"
+AllowMsg = "{{.NameFirst}} {{.NameLast}} can receive {{.ShirtSize}} t-shirt"
+DenyMsg = "{{.NameFirst}} {{.NameLast}} did not order a t-shirt"
+DuplicateMsg = "{{.NameFirst}} {{.NameLast}} already received their {{.ShirtSize}} t-shirt {{.MinutesAgo}} minutes ago"

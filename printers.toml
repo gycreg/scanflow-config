@@ -1,0 +1,17 @@
+# Printer Configuration for Scanflow
+# This file defines the label printers available for the scanflow application
+
+# Main label printer (dummy configuration for development)
+[[Printers]]
+Name = "Main Label Printer"
+Ip = "192.168.0.193"
+
+# Backup label printer (dummy configuration for development)
+[[Printers]]
+Name = "Backup Label Printer"
+Ip = "192.168.1.101"
+
+# Registration desk printer (dummy configuration for development)
+[[Printers]]
+Name = "Registration Desk Printer"
+Ip = "192.168.1.102"
