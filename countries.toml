@@ -1,0 +1,118 @@
+# Country Code to Display Name Mapping
+# This file maps ISO country codes to display names for badge subtext
+# Edit the display names to fit badge space constraints
+
+[countries]
+# North America
+CA = "Canada"
+MX = "Mexico"
+
+# Europe
+UK = "United Kingdom"
+GB = "United Kingdom"  # Alternative code for UK
+DE = "Germany"
+FR = "France"
+IT = "Italy"
+ES = "Spain"
+NL = "Netherlands"
+BE = "Belgium"
+CH = "Switzerland"
+AT = "Austria"
+SE = "Sweden"
+NO = "Norway"
+DK = "Denmark"
+FI = "Finland"
+IE = "Ireland"
+PT = "Portugal"
+GR = "Greece"
+PL = "Poland"
+CZ = "Czech Republic"
+HU = "Hungary"
+RO = "Romania"
+BG = "Bulgaria"
+HR = "Croatia"
+SI = "Slovenia"
+SK = "Slovakia"
+EE = "Estonia"
+LV = "Latvia"
+LT = "Lithuania"
+
+# Asia Pacific
+AU = "Australia"
+NZ = "New Zealand"
+JP = "Japan"
+KR = "South Korea"
+CN = "China"
+IN = "India"
+SG = "Singapore"
+MY = "Malaysia"
+TH = "Thailand"
+PH = "Philippines"
+ID = "Indonesia"
+VN = "Vietnam"
+TW = "Taiwan"
+HK = "Hong Kong"
+
+# South America
+BR = "Brazil"
+AR = "Argentina"
+CL = "Chile"
+CO = "Colombia"
+PE = "Peru"
+UY = "Uruguay"
+PY = "Paraguay"
+BO = "Bolivia"
+EC = "Ecuador"
+VE = "Venezuela"
+
+# Africa
+ZA = "South Africa"
+NG = "Nigeria"
+KE = "Kenya"
+EG = "Egypt"
+MA = "Morocco"
+GH = "Ghana"
+TZ = "Tanzania"
+UG = "Uganda"
+ZW = "Zimbabwe"
+BW = "Botswana"
+
+# Middle East
+IL = "Israel"
+AE = "UAE"
+SA = "Saudi Arabia"
+TR = "Turkey"
+JO = "Jordan"
+LB = "Lebanon"
+KW = "Kuwait"
+QA = "Qatar"
+BH = "Bahrain"
+OM = "Oman"
+
+# Caribbean
+JM = "Jamaica"
+TT = "Trinidad"
+BB = "Barbados"
+BS = "Bahamas"
+CU = "Cuba"
+DO = "Dominican Rep"
+HT = "Haiti"
+PR = "Puerto Rico"
+
+# Other
+RU = "Russia"
+UA = "Ukraine"
+BY = "Belarus"
+KZ = "Kazakhstan"
+UZ = "Uzbekistan"
+
+# Additional countries found in data
+RW = "Rwanda"
+VI = "Virgin Islands"
+KY = "Cayman Islands"
+PW = "Palau"
+SZ = "Eswatini"
+GT = "Guatemala"
+KH = "Cambodia"
+ZM = "Zambia"
+UM = "US Minor Islands"

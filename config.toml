@@ -1,0 +1,36 @@
+# RegFox Sync Service Configuration
+
+[regfox]
+# RegFox API configuration
+# API key should be set via REGFOX_API_KEY environment variable or .env file
+api_key = ""
+base_url = "https://api.webconnex.com/v2/public"
+
+[sync]
+# Synchronization settings
+interval = "1h"           # How often to perform full sync
+webhook_port = 8080       # Port for webhook server
+csv_path = "../scanflow_data/registrants.csv"
+backup_dir = "../scanflow_data/backups"
+max_backups = 10          # Number of backup files to keep
+
+[rate_limits]
+# RegFox API rate limiting
+daily_limit = 10000       # Maximum requests per day
+burst_limit = 900         # Maximum requests per 15-minute window
+burst_window = "15m"      # Burst window duration
+persist_file = "./rate_limit_state.json"
+
+# Event configurations
+# Each event represents a RegFox form that should be synchronized
+
+[[events]]
+name = "gyc25"
+form_id = "809153"
+processor = "gyc25"
+
+# Example additional event
+# [[events]]
+# name = "example_event"
+# form_id = "123456"
+# processor = "generic"
