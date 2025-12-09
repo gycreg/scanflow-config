@@ -51,3 +51,52 @@ Test = "ShirtSize != '' && ShirtSize != 'No Shirt'"
 AllowMsg = '{{.NameFirst}} {{.NameLast}} can receive {{.ShirtSize}} t-shirt'
 DenyMsg = '{{.NameFirst}} {{.NameLast}} did not order a t-shirt'
 DuplicateMsg = '{{.NameFirst}} {{.NameLast}} already received their {{.ShirtSize}} t-shirt {{.MinutesAgo}} minutes ago'
+
+# Registrant Display Configuration
+# Controls how registrant fields are organized in the "More Info" modal
+[RegistrantDisplay]
+
+[[RegistrantDisplay.FieldGroups]]
+Name = "Personal Information"
+Fields = [
+    { Key = "DisplayId", Label = "ID" },
+    { Key = "NameFirst", Label = "First Name" },
+    { Key = "NameLast", Label = "Last Name" },
+    { Key = "date_of_birth", Label = "Date of Birth" },
+    { Key = "FirstTime", Label = "First Time Attendee" },
+]
+
+[[RegistrantDisplay.FieldGroups]]
+Name = "Address"
+Fields = [
+    { Key = "address_country", Label = "Country" },
+    { Key = "address_state", Label = "State/Province" },
+    { Key = "address_city", Label = "City" },
+    { Key = "address_zip", Label = "ZIP/Postal Code" },
+]
+
+[[RegistrantDisplay.FieldGroups]]
+Name = "Registration Details"
+Fields = [
+    { Key = "EventPass", Label = "Registration Type" },
+    { Key = "GroupId", Label = "Group" },
+    { Key = "ShirtSize", Label = "T-Shirt Size" },
+    { Key = "RegistrationReason", Label = "Why Are You Attending?" },
+    { Key = "Subtext", Label = "Location" },
+]
+
+[[RegistrantDisplay.FieldGroups]]
+Name = "Meals"
+Fields = [
+    { Key = "Meals.thursday_breakfast", Label = "Thursday Breakfast" },
+    { Key = "Meals.thursday_lunch", Label = "Thursday Lunch" },
+    { Key = "Meals.thursday_supper", Label = "Thursday Supper" },
+    { Key = "Meals.friday_breakfast", Label = "Friday Breakfast" },
+    { Key = "Meals.friday_lunch", Label = "Friday Lunch" },
+    { Key = "Meals.friday_supper", Label = "Friday Supper" },
+    { Key = "Meals.sabbath_breakfast", Label = "Sabbath Breakfast" },
+    { Key = "Meals.sabbath_lunch", Label = "Sabbath Lunch" },
+    { Key = "Meals.sabbath_supper", Label = "Sabbath Supper" },
+    { Key = "Meals.sunday_breakfast", Label = "Sunday Breakfast" },
+    { Key = "Meals.sunday_lunch", Label = "Sunday Lunch" },
+]
