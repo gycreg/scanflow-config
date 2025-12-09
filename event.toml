@@ -1,11 +1,6 @@
 EventName = 'Seeing the Invisible'
 Logo = '../static/images/gyc-logo-hotspot.svg'
-
-[EventPassMapping]
-sabbathOnly = "Sabbath Only"
-exhibitorPass = "Exhibitor"
-option1 = "Full Conference - Adult"
-option2 = "Full Conference - Minor"
+QrUrlPrefix = ''
 
 [[CardFields]]
 Name = 'Full Name'
@@ -52,51 +47,121 @@ AllowMsg = '{{.NameFirst}} {{.NameLast}} can receive {{.ShirtSize}} t-shirt'
 DenyMsg = '{{.NameFirst}} {{.NameLast}} did not order a t-shirt'
 DuplicateMsg = '{{.NameFirst}} {{.NameLast}} already received their {{.ShirtSize}} t-shirt {{.MinutesAgo}} minutes ago'
 
-# Registrant Display Configuration
-# Controls how registrant fields are organized in the "More Info" modal
+[EventPassMapping]
+exhibitorPass = 'Exhibitor'
+option1 = 'Full Conference - Adult'
+option2 = 'Full Conference - Minor'
+sabbathOnly = 'Sabbath Only'
+
 [RegistrantDisplay]
+[[RegistrantDisplay.FieldGroups]]
+Name = 'Personal Information'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'DisplayId'
+Label = 'ID'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'NameFirst'
+Label = 'First Name'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'NameLast'
+Label = 'Last Name'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'date_of_birth'
+Label = 'Date of Birth'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'FirstTime'
+Label = 'First Time Attendee'
 
 [[RegistrantDisplay.FieldGroups]]
-Name = "Personal Information"
-Fields = [
-    { Key = "DisplayId", Label = "ID" },
-    { Key = "NameFirst", Label = "First Name" },
-    { Key = "NameLast", Label = "Last Name" },
-    { Key = "date_of_birth", Label = "Date of Birth" },
-    { Key = "FirstTime", Label = "First Time Attendee" },
-]
+Name = 'Meals'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.thursday_breakfast'
+Label = 'Thursday Breakfast'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.thursday_lunch'
+Label = 'Thursday Lunch'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.thursday_supper'
+Label = 'Thursday Supper'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.friday_breakfast'
+Label = 'Friday Breakfast'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.friday_lunch'
+Label = 'Friday Lunch'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.friday_supper'
+Label = 'Friday Supper'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.sabbath_breakfast'
+Label = 'Sabbath Breakfast'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.sabbath_lunch'
+Label = 'Sabbath Lunch'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.sabbath_supper'
+Label = 'Sabbath Supper'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.sunday_breakfast'
+Label = 'Sunday Breakfast'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Meals.sunday_lunch'
+Label = 'Sunday Lunch'
 
 [[RegistrantDisplay.FieldGroups]]
-Name = "Address"
-Fields = [
-    { Key = "address_country", Label = "Country" },
-    { Key = "address_state", Label = "State/Province" },
-    { Key = "address_city", Label = "City" },
-    { Key = "address_zip", Label = "ZIP/Postal Code" },
-]
+Name = 'Registration Details'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'EventPass'
+Label = 'Registration Type'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'GroupId'
+Label = 'Group'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'ShirtSize'
+Label = 'T-Shirt Size'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'RegistrationReason'
+Label = 'Why Are You Attending?'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'Subtext'
+Label = 'Location'
 
 [[RegistrantDisplay.FieldGroups]]
-Name = "Registration Details"
-Fields = [
-    { Key = "EventPass", Label = "Registration Type" },
-    { Key = "GroupId", Label = "Group" },
-    { Key = "ShirtSize", Label = "T-Shirt Size" },
-    { Key = "RegistrationReason", Label = "Why Are You Attending?" },
-    { Key = "Subtext", Label = "Location" },
-]
+Name = 'Address'
 
-[[RegistrantDisplay.FieldGroups]]
-Name = "Meals"
-Fields = [
-    { Key = "Meals.thursday_breakfast", Label = "Thursday Breakfast" },
-    { Key = "Meals.thursday_lunch", Label = "Thursday Lunch" },
-    { Key = "Meals.thursday_supper", Label = "Thursday Supper" },
-    { Key = "Meals.friday_breakfast", Label = "Friday Breakfast" },
-    { Key = "Meals.friday_lunch", Label = "Friday Lunch" },
-    { Key = "Meals.friday_supper", Label = "Friday Supper" },
-    { Key = "Meals.sabbath_breakfast", Label = "Sabbath Breakfast" },
-    { Key = "Meals.sabbath_lunch", Label = "Sabbath Lunch" },
-    { Key = "Meals.sabbath_supper", Label = "Sabbath Supper" },
-    { Key = "Meals.sunday_breakfast", Label = "Sunday Breakfast" },
-    { Key = "Meals.sunday_lunch", Label = "Sunday Lunch" },
-]
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'address_country'
+Label = 'Country'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'address_state'
+Label = 'State/Province'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'address_city'
+Label = 'City'
+
+[[RegistrantDisplay.FieldGroups.Fields]]
+Key = 'address_zip'
+Label = 'ZIP/Postal Code'
