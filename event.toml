@@ -1,6 +1,6 @@
 EventName = 'Seeing the Invisible'
 Logo = '../static/images/gyc-logo-hotspot.svg'
-QrUrlPrefix = ''
+QrUrlPrefix = 'https://events.sangana.co/download/'
 
 [[CardFields]]
 Name = 'Full Name'
