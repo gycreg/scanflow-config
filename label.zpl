@@ -8,6 +8,6 @@
 ^FO50,{{ add 235 (mul $i 35) }}^A0N,28,0^FD{{ $meal }}^FS
 {{- end }}
 {{- end }}
-^FO380,200^^BQN,2,8^FDQA,{{ .QrCodeValue }}^FS
+^FO460,200^^BQN,2,8^FDQA,{{ .QrCodeValue }}^FS
 ^FO50,470^A0N,35,35^FD{{ .EventPass }}^FS
 ^XZ
