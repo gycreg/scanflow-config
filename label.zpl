@@ -5,9 +5,9 @@
 {{- if gt .MealsCount 0 }}
 ^FO50,200^A0N,30,30^FDMeals:^FS
 {{- range $i, $meal := .MealsArray }}
-^FO50,{{ add 235 (mul $i 35) }}^A0N,28,28^FD{{ $meal }}^FS
+^FO50,{{ add 235 (mul $i 35) }}^A0N,28,0^FD{{ $meal }}^FS
 {{- end }}
 {{- end }}
-^FO490,200^^BQN,2,9^FDQA,{{ .QrCodeValue }}^FS
+^FO380,200^^BQN,2,8^FDQA,{{ .QrCodeValue }}^FS
 ^FO50,470^A0N,35,35^FD{{ .EventPass }}^FS
 ^XZ
