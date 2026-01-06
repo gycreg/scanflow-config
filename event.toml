@@ -46,6 +46,8 @@ Test = "ShirtSize != '' && ShirtSize != 'No Shirt'"
 AllowMsg = '{{.NameFirst}} {{.NameLast}} can receive {{.ShirtSize}} t-shirt'
 DenyMsg = '{{.NameFirst}} {{.NameLast}} did not order a t-shirt'
 DuplicateMsg = '{{.NameFirst}} {{.NameLast}} already received their {{.ShirtSize}} t-shirt {{.MinutesAgo}} minutes ago'
+VariantField = 'ShirtSize'
+
 
 [EventPassMapping]
 exhibitorPass = 'Exhibitor'
