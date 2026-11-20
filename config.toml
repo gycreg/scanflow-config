@@ -19,3 +19,177 @@ persist_file = './rate_limit_state.json'
 name = 'Gyc26'
 form_id = '1015512'
 processor = 'gyc25'
+
+[[events.fields]]
+column = 'DisplayId'
+sources = ['@displayId']
+
+[[events.fields]]
+column = 'NameFirst'
+sources = ['name.first']
+
+[[events.fields]]
+column = 'NameLast'
+sources = ['name.last']
+
+[[events.fields]]
+column = 'GroupId'
+sources = ['@orderId']
+
+[[events.fields]]
+column = 'EventPass'
+sources = ['registrationOptions', 'registrationMinors']
+default = 'ERROR - NO PASS'
+
+[[events.fields]]
+column = 'ShirtSize'
+sources = ['pleaseSelectTshirtSize']
+
+[events.fields.values]
+mens2xLarge = "Men's 2XL"
+mens3xLarge = "Men's 3XL"
+mensExtraLarge = "Men's Large"
+mensExtraLarge2 = "Men's XL"
+mensLarge = "Men's Medium"
+mensMedium = "Men's Small"
+mensSmall = "Women's 2XL"
+womensExtraLarge = "Women's XL"
+womensLarge = "Women's Large"
+womensMedium = "Women's Medium"
+womensSmall = "Women's Small"
+
+[[events.fields]]
+column = 'phone'
+sources = ['phone']
+
+[[events.fields]]
+column = 'email'
+sources = ['email']
+
+[[events.fields]]
+column = 'address_country'
+sources = ['address.country']
+
+[[events.fields]]
+column = 'address_city'
+sources = ['address.city']
+
+[[events.fields]]
+column = 'address_state'
+sources = ['address.state']
+
+[[events.fields]]
+column = 'date_of_birth'
+sources = ['dateOfBirth']
+
+[[events.fields]]
+column = 'FirstTime'
+sources = ['thisYourFirstTime2', 'thisYourFirstTime']
+
+[[events.fields]]
+column = 'RegistrationReason'
+sources = ['howDidYouHear']
+
+[[events.fields]]
+column = 'Subtext'
+sources = ['address.country', 'address.city', 'address.state']
+transform = 'location'
+
+[[events.fields]]
+column = 'OutreachProject'
+sources = ['projectTypes']
+
+[events.fields.values]
+bibleStudy = 'Bible Study'
+literatureEvangelism = 'Literature Evangelism'
+mediaEvangelism = 'Media Evangelism'
+packingProject = 'Packing Project'
+unhousedOutreach = 'Compassion Project (SALT)'
+
+[[events.fields]]
+column = 'Meals.thursday_breakfast'
+sources = ['mealOptions.thursdayBreakfast', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.thursday_lunch'
+sources = ['mealOptions.thursdayLunch', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.thursday_supper'
+sources = ['mealOptions.thursdaySupper', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.friday_breakfast'
+sources = ['mealOptions.fridayBreakfast', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.friday_lunch'
+sources = ['mealOptions.fridayLunch', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.friday_supper'
+sources = ['mealOptions.fridaySupper', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.sabbath_breakfast'
+sources = ['mealOptions.sabbathBreakfast', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.sabbath_lunch'
+sources = ['mealOptions.sabbathLunch', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.sabbath_supper'
+sources = ['mealOptions.sabbathSupper', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.sunday_breakfast'
+sources = ['mealOptions.sundayBreakfast', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
+
+[[events.fields]]
+column = 'Meals.sunday_lunch'
+sources = ['mealOptions.sundayLunch', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
+transform = 'boolean'
+
+[events.fields.values]
+allMealsPackage = 'true'
