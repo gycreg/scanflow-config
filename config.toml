@@ -16,6 +16,6 @@ burst_window = '15m'
 persist_file = './rate_limit_state.json'
 
 [[events]]
-name = 'gyc25'
-form_id = '809153'
+name = 'Gyc26'
+form_id = '1015512'
 processor = 'gyc25'
