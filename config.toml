@@ -123,32 +123,8 @@ transform = 'boolean'
 allMealsPackage = 'true'
 
 [[events.fields]]
-column = 'Meals.thursday_supper'
-sources = ['mealOptions.thursdaySupper', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
-transform = 'boolean'
-
-[events.fields.values]
-allMealsPackage = 'true'
-
-[[events.fields]]
 column = 'Meals.friday_breakfast'
 sources = ['mealOptions.fridayBreakfast', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
-transform = 'boolean'
-
-[events.fields.values]
-allMealsPackage = 'true'
-
-[[events.fields]]
-column = 'Meals.friday_lunch'
-sources = ['mealOptions.fridayLunch', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
-transform = 'boolean'
-
-[events.fields.values]
-allMealsPackage = 'true'
-
-[[events.fields]]
-column = 'Meals.friday_supper'
-sources = ['mealOptions.fridaySupper', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
 transform = 'boolean'
 
 [events.fields.values]
@@ -171,24 +147,8 @@ transform = 'boolean'
 allMealsPackage = 'true'
 
 [[events.fields]]
-column = 'Meals.sabbath_supper'
-sources = ['mealOptions.sabbathSupper', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
-transform = 'boolean'
-
-[events.fields.values]
-allMealsPackage = 'true'
-
-[[events.fields]]
 column = 'Meals.sunday_breakfast'
 sources = ['mealOptions.sundayBreakfast', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
-transform = 'boolean'
-
-[events.fields.values]
-allMealsPackage = 'true'
-
-[[events.fields]]
-column = 'Meals.sunday_lunch'
-sources = ['mealOptions.sundayLunch', 'multipleChoice2', 'mealPackage', 'fullMealPackage']
 transform = 'boolean'
 
 [events.fields.values]
