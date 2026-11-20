@@ -91,20 +91,8 @@ Key = 'Meals.thursday_lunch'
 Label = 'Thursday Lunch'
 
 [[RegistrantDisplay.FieldGroups.Fields]]
-Key = 'Meals.thursday_supper'
-Label = 'Thursday Supper'
-
-[[RegistrantDisplay.FieldGroups.Fields]]
 Key = 'Meals.friday_breakfast'
 Label = 'Friday Breakfast'
-
-[[RegistrantDisplay.FieldGroups.Fields]]
-Key = 'Meals.friday_lunch'
-Label = 'Friday Lunch'
-
-[[RegistrantDisplay.FieldGroups.Fields]]
-Key = 'Meals.friday_supper'
-Label = 'Friday Supper'
 
 [[RegistrantDisplay.FieldGroups.Fields]]
 Key = 'Meals.sabbath_breakfast'
@@ -115,16 +103,8 @@ Key = 'Meals.sabbath_lunch'
 Label = 'Sabbath Lunch'
 
 [[RegistrantDisplay.FieldGroups.Fields]]
-Key = 'Meals.sabbath_supper'
-Label = 'Sabbath Supper'
-
-[[RegistrantDisplay.FieldGroups.Fields]]
 Key = 'Meals.sunday_breakfast'
 Label = 'Sunday Breakfast'
-
-[[RegistrantDisplay.FieldGroups.Fields]]
-Key = 'Meals.sunday_lunch'
-Label = 'Sunday Lunch'
 
 [[RegistrantDisplay.FieldGroups]]
 Name = 'Registration Details'
